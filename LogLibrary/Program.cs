@@ -11,9 +11,14 @@ namespace LogLibrary
             var log = new Log();
             try
             {
-                string pathToLog = $"{DateTime.Now.ToString("d")}.log";
-                Console.WriteLine(pathToLog);
-                int n = int.Parse(Console.ReadLine());
+                var array = new int[10];
+                var rand = new Random();
+                int someNumber = 15;
+                for(int i = 0; i < someNumber; i++)
+                {
+                    array[i] = rand.Next(20,40);
+                }
+
             }
             catch(Exception ex)
             {                
